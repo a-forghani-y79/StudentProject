@@ -1,0 +1,17 @@
+.anchor-background {
+    -fx-background-image:url(unnamed.jpg);
+    -fx-background-size: cover;
+    
+}
+.anchor-forgroung {
+    -fx-opacity: 30%;
+    -fx-background-color: #42a5f5;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+}
+.anchor-forground-elements{
+    
+    -fx-text-fill: white;
+    -jfx-focus-color:#bbdefb;
+    -jfx-unfocus-color:#e3f2fd;
+}

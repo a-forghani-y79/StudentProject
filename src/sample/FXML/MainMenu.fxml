@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane style="-fx-padding: 3px;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainMenuController">
+   <children>
+      <JFXTabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" rotateGraphic="true" side="LEFT" style="-fx-opacity: 100; -fx-padding: 1;" tabMaxHeight="90.0" tabMaxWidth="90.0" tabMinHeight="90.0" tabMinWidth="90.0">
+         <tabs>
+            <Tab>
+               <graphic>
+                  <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                     <image>
+                        <Image url="@user.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Label alignment="CENTER" layoutX="160.0" layoutY="14.0" prefHeight="61.0" prefWidth="161.0" text="add New Student" textAlignment="CENTER">
+                           <font>
+                              <Font name="Beautiful People Personal Use " size="25.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="20.0" layoutY="80.0" prefHeight="25.0" text="Last Name :">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="20.0" layoutY="125.0" prefHeight="25.0" text="Student ID :">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="20.0" layoutY="215.0" prefHeight="25.0" text="Grade of Lesson 1 :">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="20.0" layoutY="260.0" prefHeight="25.0" text="Grade of Lesson 2 :">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="20.0" layoutY="305.0" prefHeight="25.0" text="Grade of Lesson 3 :">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="200.0" layoutY="215.0" prefHeight="25.0" text="Unit :">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="200.0" layoutY="261.0" prefHeight="25.0" text="Unit :">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="200.0" layoutY="305.0" prefHeight="25.0" text="Unit :">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtGradeL3" layoutX="135.0" layoutY="305.0" prefWidth="40.0" />
+                        <TextField fx:id="txtGradeL2" layoutX="135.0" layoutY="260.0" prefWidth="40.0" />
+                        <TextField fx:id="txtGradeL1" layoutX="135.0" layoutY="215.0" prefWidth="40.0" />
+                        <TextField fx:id="txtUnitL1" layoutX="240.0" layoutY="215.0" prefWidth="40.0" />
+                        <TextField fx:id="txtUnitL2" layoutX="240.0" layoutY="260.0" prefWidth="40.0" />
+                        <TextField fx:id="txtUnitL3" layoutX="240.0" layoutY="305.0" prefWidth="40.0" />
+                        <TextField fx:id="txtLastName" layoutX="95.0" layoutY="80.0" />
+                        <TextField fx:id="txtID" layoutX="95.0" layoutY="125.0" prefHeight="25.0" />
+                        <Label layoutX="20.0" layoutY="170.0" text="Gender :" />
+                        <JFXCheckBox fx:id="chBoxMale" layoutX="95.0" layoutY="166.0" onAction="#onClickChkBox" text="Male" />
+                        <JFXCheckBox fx:id="chBoxFemale" layoutX="167.0" layoutY="166.0" onAction="#onClickChkBox" text="Female" />
+                        <JFXButton fx:id="btnReset" layoutX="96.0" layoutY="347.0" onAction="#onClickReset" text="reset" />
+                        <JFXButton fx:id="btnSubmit" layoutX="225.0" layoutY="347.0" onAction="#onClickSubmit" text="Submit" />
+                        <TextField fx:id="txtFirstName" layoutX="321.0" layoutY="81.0" />
+                        <Label layoutX="247.0" layoutY="81.0" prefHeight="25.0" text="First Name :">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+            <Tab>
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <JFXButton layoutX="61.0" layoutY="57.0" onAction="#onClickFirstLesson" text="Fist Lesson" />
+                        <JFXButton layoutX="201.0" layoutY="57.0" onAction="#onClickSecondLesson" text="Second Lesson" />
+                        <JFXButton layoutX="354.0" layoutY="57.0" onAction="#onClickThirdLesson" text="Third Lesson" />
+                        <Label layoutX="156.0" layoutY="14.0" text="Attendence List">
+                           <font>
+                              <Font size="29.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="223.0" layoutY="110.0" text="Others">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <JFXButton layoutX="56.0" layoutY="174.0" onAction="#onClickTopStudents" text="Top Students" />
+                        <JFXButton layoutX="217.0" layoutY="174.0" onAction="#onClickThirdRate" text="Third Rate" />
+                        <JFXButton layoutX="335.0" layoutY="174.0" onAction="#onClickConditionalStidents" text="Conditional student" />
+                        <TextArea editable="false" layoutX="21.0" layoutY="219.0" prefHeight="173.0" prefWidth="469.0" />
+                     </children></AnchorPane>
+              </content>
+               <graphic>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                     <image>
+                        <Image url="@abs.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Tab>
+            <Tab>
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+               <graphic>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                     <image>
+                        <Image url="@report.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Tab>
+            <Tab>
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+               <graphic>
+                  <ImageView fx:id="imgLogOut" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                     <image>
+                        <Image url="@sign-out.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+   </children>
+</StackPane>
